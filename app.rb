@@ -38,11 +38,11 @@ class App < Sinatra::Base
     when 'add'
       answer = (number1 + number2).to_s 
       when 'subtract'
-        answer = (num1 - num2).to_s  
+        answer = (number1 - number2).to_s  
         when 'muliply'
-          answer = (num1 * num2).to_s  
+          answer = (number1 * number2).to_s  
           when 'divide'
-            answer = (num1 / num2).to_s 
+            answer = (number1 / number2).to_s 
           end
     
   end
