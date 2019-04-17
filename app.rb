@@ -16,7 +16,7 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phrase' do 
-    answer = ""
+    answer = "Unable to perform this operation"
     @num = params[:number]
     #binding.pry
     @num.to_i.times do 
