@@ -34,7 +34,6 @@ class App < Sinatra::Base
     num2 = params[:number2].to_i
     answer = ""
     case params[:operation]
-    #binding.pry
     when 'add'
       answer = (num1 + num2).to_s 
       when 'subtract'
