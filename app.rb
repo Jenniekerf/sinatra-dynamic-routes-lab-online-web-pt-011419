@@ -16,7 +16,7 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phrase' do 
-    answer = "Unable to perform this operation"
+    answer = ""
     @num = params[:number]
     #binding.pry
     @num.to_i.times do 
@@ -33,7 +33,7 @@ class App < Sinatra::Base
     num1 = params[:number1].to_i
     num2 = params[:number2].to_i
     
-    answer = ""
+    answer = "Unable to perform this opration"
     case params[:operation]
     when 'add'
       answer = (num1 + num2).to_s 
